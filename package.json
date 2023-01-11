@@ -1,0 +1,39 @@
+{
+  "name": "@kartjim/heap",
+  "version": "1.0.0",
+  "description": "MinHeap, MaxHeap and Heap implementation in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/can-dy-jack/heap.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "implementation",
+    "Heap",
+    "MinHeap",
+    "MaxHeap",
+    "data-structure"
+  ],
+  "author": "can-dy-jack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/can-dy-jack/heap/issues"
+  },
+  "homepage": "https://github.com/can-dy-jack/heap#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "grunt": "^1.5.3",
+    "grunt-eslint": "^24.0.1",
+    "grunt-mocha-istanbul": "^5.0.2",
+    "grunt-mocha-test": "^0.13.3",
+    "istanbul": "^0.4.5",
+    "mocha": "^10.2.0"
+  }
+}
