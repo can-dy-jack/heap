@@ -1,2 +1,2 @@
 # heap
-Heap implementation in JavaScript
+- [ ] MinHeap/MaxHeap & Heap implementation in JavaScript
