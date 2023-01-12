@@ -1,7 +1,6 @@
 # heap
 - [ ] MinHeap
 - [ ] MaxHeap
-- [ ] Heap
 
 > `堆` 在大部分编程语言中，都已经有内置方法实现它，但似乎JS并没有。
 > 
@@ -68,12 +67,8 @@ heap.peek() // 3
 heap.pop() // 3
 ```
 
-
 ### getSize
 > return the size of the MaxHeap.
-
-时间复杂度： $O(1)$  
-空间复杂度： $O(1)$
 
 ```js
 heap.getSize() // 2

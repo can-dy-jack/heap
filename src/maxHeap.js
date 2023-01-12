@@ -18,8 +18,9 @@ class MaxHeap {
    */
   push(element) {
     if (this.realSize === this.size) {
-      throw new Error('Heap is full.');
+      throw new Error('MaxHeap is full.');
     }
+
     this.realSize += 1;
     this.maxHeap[this.realSize] = element;
 
@@ -47,7 +48,7 @@ class MaxHeap {
    */
   pop() {
     if (this.isEmpty()) {
-      throw new Error('Heap is empty.');
+      throw new Error('MaxHeap is empty.');
     }
 
     const removedNode = this.maxHeap[1];
@@ -68,6 +69,11 @@ class MaxHeap {
           this.maxHeap[idx] = this.maxHeap[right];
           this.maxHeap[right] = t;
           idx = right;
+        } else {
+          const t = this.maxHeap[idx];
+          this.maxHeap[idx] = this.maxHeap[left];
+          this.maxHeap[left] = t;
+          idx = left;
         }
       } else {
         break;
