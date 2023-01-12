@@ -7,6 +7,7 @@
 > 
 > 最大堆和最小堆：用于高效快速地取得当前数据集中最大或者最小的元素
 
+<!-- 默认初始大小？ -->
 
 <!-- 
 可以在 O(logN)O(logN) 的时间复杂度内向 堆 中插入元素；
@@ -25,3 +26,54 @@
 右节点：n*1+1
 叶子节点个数：索引大于 n/2 的都是 
  -->
+
+
+
+## MaxHeap API
+### use
+constructor 
+
+时间复杂度：$O(N)$  
+空间复杂度：$O(N)$  
+```js
+const heap = new MaxHeap(4);
+```
+
+### push
+add a new element to the MaxHeap.  
+
+时间复杂度： $O(log N)$  
+空间复杂度： $O(1)$
+```js
+heap.push(1);
+heap.push(2);
+heap.push(3);
+```
+
+### peek
+return the max element in the MaxHeap.  
+时间复杂度：$O(1)$。
+空间复杂度：$O(1)$。
+```js
+heap.peek() // 3
+```
+
+### pop
+remove the max element in the MaxHeap.  
+时间复杂度：$O(log N)$    
+空间复杂度：$O(1)$
+```js
+heap.pop() // 3
+```
+
+
+### getSize
+return the size of the MaxHeap.  
+时间复杂度：$O(1)$  
+空间复杂度：$O(1)$
+
+```js
+heap.getSize() // 2
+```
+
+---

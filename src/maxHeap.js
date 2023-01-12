@@ -6,7 +6,7 @@
  * @class MaxHeap
  */
 class MaxHeap {
-  constructor(n) {
+  constructor(n = 0) {
     this.maxHeap = new Array(n + 1);
     this.size = n;
     this.realSize = 0;
@@ -99,6 +99,21 @@ class MaxHeap {
       arr.push(this.maxHeap[i]);
     }
     return arr;
+  }
+
+  /**
+   * @description create a MaxHeap from a Array.
+   */
+  static heapify(arr) {
+    if (!Array.isArray(arr)) {
+      throw new Error('arr is not an Array.');
+    }
+
+    const heap = new MaxHeap(arr.length);
+    for (let i = 0; i < arr.length; i += 1) {
+      heap.push(arr[i]);
+    }
+    return heap;
   }
 }
 
