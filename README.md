@@ -33,14 +33,14 @@
 ### use
 constructor 
 
-时间复杂度：$O(N)$  
-空间复杂度：$O(N)$  
+时间复杂度： $O(N)$    
+空间复杂度： $O(N)$  
 ```js
 const heap = new MaxHeap(4);
 ```
 
 ### push
-add a new element to the MaxHeap.  
+> add a new element to the MaxHeap.  
 
 时间复杂度： $O(log N)$  
 空间复杂度： $O(1)$
@@ -51,26 +51,29 @@ heap.push(3);
 ```
 
 ### peek
-return the max element in the MaxHeap.  
-时间复杂度：$O(1)$。
-空间复杂度：$O(1)$。
+> return the max element in the MaxHeap.  
+
+时间复杂度： $O(1)$。  
+空间复杂度： $O(1)$。
 ```js
 heap.peek() // 3
 ```
 
 ### pop
-remove the max element in the MaxHeap.  
-时间复杂度：$O(log N)$    
-空间复杂度：$O(1)$
+> remove the max element in the MaxHeap.  
+
+时间复杂度： $O(log N)$      
+空间复杂度： $O(1)$
 ```js
 heap.pop() // 3
 ```
 
 
 ### getSize
-return the size of the MaxHeap.  
-时间复杂度：$O(1)$  
-空间复杂度：$O(1)$
+> return the size of the MaxHeap.
+
+时间复杂度： $O(1)$  
+空间复杂度： $O(1)$
 
 ```js
 heap.getSize() // 2
