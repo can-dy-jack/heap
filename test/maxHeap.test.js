@@ -1,4 +1,4 @@
-const { expect } = require('chai');
+const { expect, assert } = require('chai');
 const { MaxHeap } = require('../src/maxHeap');
 
 describe('maxHeap Tests', () => {
@@ -21,8 +21,34 @@ describe('maxHeap Tests', () => {
         () => heap.push(5)
       ).to.throw(Error).to.have.property(
         'message',
-        'Heap is full.'
+        'MaxHeap is full.'
       );
+    });
+  });
+
+  describe('peek() test', () => {
+    it('return the max element in the MaxHeap', () => {
+      assert(heap.peek(), 4);
+    });
+  });
+
+  describe('getSize() test', () => {
+    it('return the size of the MaxHeap', () => {
+      assert(heap.getSize(), 4);
+    });
+  });
+
+  describe('isEmpty() test', () => {
+    it('check if the MaxHeap is empty', () => {
+      expect(heap.isEmpty()).to.equal(false);
+    });
+  });
+
+  describe('MaxHeap.heapify() test', () => {
+    it('create a MaxHeap from a Array.', () => {
+      const t = MaxHeap.heapify([1, 2, 3, 4]);
+      expect(t.peek()).to.equal(4);
+      expect(t.getSize()).to.equal(4);
     });
   });
 });

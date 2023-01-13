@@ -23,11 +23,12 @@ class MinHeap {
 
     this.realSize += 1;
     this.minHeap[this.realSize] = element;
+
     let idx = this.realSize;
-    let parent = Math.floor(this.realSize / 2);
+    let parent = Math.floor(idx / 2);
     while (
-      idx > 1
-      && this.minHeadp[idx] < this.minHeap[parent]
+      this.minHeap[idx] < this.minHeap[parent]
+      && idx > 1
     ) {
       this._swap(idx, parent);
       idx = parent;
@@ -80,8 +81,8 @@ class MinHeap {
    * @description swap the element at index i and j
    */
   _swap(i, j) {
-    const t = this.minHeadp[i];
-    this.minHeadp[i] = this.minHeap[j];
+    const t = this.minHeap[i];
+    this.minHeap[i] = this.minHeap[j];
     this.minHeap[j] = t;
   }
 
