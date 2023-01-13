@@ -4,7 +4,10 @@
   "description": "MinHeap, MaxHeap and Heap implementation in JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "grunt lint",
+    "test": "grunt test",
+    "coverage": "grunt coverage",
+    "build": "grunt build"
   },
   "repository": {
     "type": "git",
