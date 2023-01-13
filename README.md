@@ -1,9 +1,7 @@
 # heap
-- [x] MinHeap
-- [x] MaxHeap
 
 > `堆` 在大部分编程语言中，都已经有内置方法实现它，但似乎JS并没有。
-> 
+>
 > 最大堆和最小堆：用于高效快速地取得当前数据集中最大或者最小的元素
 
 The default initial size of heap is 0.  
