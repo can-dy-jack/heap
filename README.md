@@ -4,7 +4,7 @@
 >
 > 最大堆和最小堆：用于高效快速地取得当前数据集中最大或者最小的元素
 
-The default initial size of heap is 0.  
+> The default initial size of heap is 0.  
 
 <!-- 
 插入：找到第一个空子节点，插入，然后与父节点不断替换，直到符合特点
@@ -16,6 +16,7 @@ The default initial size of heap is 0.
 右节点：n*1+1
 叶子节点个数：索引大于 n/2 的都是 
  -->
+
 ## install
 ```sh
 npm i @kartjim/heap
@@ -24,7 +25,9 @@ npm i @kartjim/heap
 ```js
 const {
     MaxHeap,
-    MinHeap
+    MinHeap,
+    minHeapSort,
+    maxHeapSort
 } = require('@kartjim/heap');
 ```
 
@@ -32,8 +35,26 @@ const {
 ```js
 import {
     MaxHeap,
-    MinHeap
+    MinHeap,
+    minHeapSort,
+    maxHeapSort
 } from '@kartjim/heap';
+```
+
+## HeapSort
+### maxHeapSort
+> sort the array using MaxHeap (from maximum to minimum).
+
+```js
+const arr = [12, 668, 1, 0, 4, 67];
+maxHeapSort(arr) // [668, 67, 12, 4, 1, 0]
+```
+### minHeapSort
+> sort the array using MaxHeap (from minimum to maximum).
+
+```js
+const arr = [12, 668, 1, 0, 4, 67];
+minHeapSort(arr) // [0, 1, 4, 12, 67, 668]
 ```
 
 ## MaxHeap API

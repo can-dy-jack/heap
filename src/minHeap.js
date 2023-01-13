@@ -3,7 +3,7 @@
  */
 
 /**
- * @class MaxHeap
+ * @class MinHeap
  */
 class MinHeap {
   constructor(n = 0) {
@@ -38,7 +38,7 @@ class MinHeap {
 
   /**
    * @description return the min element in the MinHeap.
-   * @returns {number} the max element in the MaxHeap
+   * @returns {number} the min element in the MinHeap
    */
   peek() {
     return this.minHeap[1];
@@ -54,9 +54,10 @@ class MinHeap {
 
     const removedNode = this.minHeap[1];
     this.minHeap[1] = this.minHeap[this.realSize];
+
     this.realSize -= 1;
     let idx = 1;
-    while (idx < this.realSize && idx < Math.floor(this.realSize / 2)) {
+    while (idx < this.realSize && idx <= Math.floor(this.realSize / 2)) {
       const left = idx * 2;
       const right = idx * 2 + 1;
       if (this.minHeap[left] < this.minHeap[idx]
@@ -112,7 +113,7 @@ class MinHeap {
   }
 
   /**
-   * @description create a MaxHeap from a Array.
+   * @description create a MinHeap from a Array.
    */
   static heapify(arr) {
     if (!Array.isArray(arr)) {
