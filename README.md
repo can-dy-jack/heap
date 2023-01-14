@@ -45,12 +45,16 @@ import {
 ### maxHeapSort
 > sort the array using MaxHeap (from maximum to minimum).
 
+时间复杂度： $O(log N)$ 
+
 ```js
 const arr = [12, 668, 1, 0, 4, 67];
 maxHeapSort(arr) // [668, 67, 12, 4, 1, 0]
 ```
 ### minHeapSort
 > sort the array using MaxHeap (from minimum to maximum).
+
+时间复杂度： $O(log N)$ 
 
 ```js
 const arr = [12, 668, 1, 0, 4, 67];
@@ -107,6 +111,12 @@ heap.getSize() // 2
 
 ```js
 heap.isEmpty() // false
+```
+### isFull
+> check if the MaxHeap is full
+
+```js
+heap.isFull() // true
 ```
 ### MaxHeap.heapify
 > create a MaxHeap from a Array.
@@ -166,6 +176,12 @@ heap.getSize() // 2
 
 ```js
 heap.isEmpty() // false
+```
+### isFull
+> check if the MinHeap is full
+
+```js
+heap.isFull() // true
 ```
 ### MaxHeap.heapify
 > create a MinHeap from a Array.

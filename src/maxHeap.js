@@ -97,6 +97,13 @@ class MaxHeap {
   }
 
   /**
+   * @description check if the MaxHeap is full
+   */
+  isFull() {
+    return this.realSize === this.size;
+  }
+
+  /**
    * @description convert the MaxHeap into a Array.
    */
   toArray() {

@@ -44,6 +44,12 @@ describe('maxHeap Tests', () => {
     });
   });
 
+  describe('isFull() test', () => {
+    it('check if the MaxHeap is full', () => {
+      expect(heap.isFull()).to.equal(true);
+    });
+  });
+
   describe('MaxHeap.heapify() test', () => {
     it('create a MaxHeap from a Array.', () => {
       const t = MaxHeap.heapify([1, 2, 3, 4]);

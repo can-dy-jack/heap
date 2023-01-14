@@ -95,6 +95,13 @@ class MinHeap {
   }
 
   /**
+   * @description check if the MinHeap is full
+   */
+  isFull() {
+    return this.realSize === this.size;
+  }
+
+  /**
    * @description return the size of the MinHeap
    */
   getSize() {

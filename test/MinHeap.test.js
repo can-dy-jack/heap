@@ -44,6 +44,12 @@ describe('MinHeap Tests', () => {
     });
   });
 
+  describe('isFull() test', () => {
+    it('check if the MinHeap is full', () => {
+      expect(heap.isFull()).to.equal(true);
+    });
+  });
+
   describe('MinHeap.heapify() test', () => {
     it('create a MinHeap from a Array.', () => {
       const t = MinHeap.heapify([1, 2, 3, 4]);
