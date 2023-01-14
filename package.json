@@ -1,7 +1,7 @@
 {
   "name": "@kartjim/heap",
-  "version": "1.1.0",
-  "description": "MinHeap, MaxHeap and Heap implementation in JavaScript",
+  "version": "1.1.1",
+  "description": "MinHeap, MaxHeap and heapSort implementation in JavaScript",
   "main": "index.js",
   "scripts": {
     "lint": "grunt lint",
@@ -15,10 +15,11 @@
   },
   "keywords": [
     "JavaScript",
-    "implementation",
     "Heap",
     "MinHeap",
     "MaxHeap",
+    "maxHeapSort",
+    "minHeapSort",
     "data-structure"
   ],
   "author": "can-dy-jack",
